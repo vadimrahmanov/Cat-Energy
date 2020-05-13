@@ -1,0 +1,158 @@
+.banner {
+  min-width: $mobile-width;
+  max-width: 1440px;
+  border-top: 1px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  &--index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 483px;
+    padding-bottom: 12px;
+    border-bottom: none;
+    background:
+      url("../img/index-can-mobile@1x.png"),
+      url("../img/index-background-mobile@1x.jpg"),
+      linear-gradient(to top, $white 38%, #64a83b 38%);
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: 50% 168px, 50% 0, 50% 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background:
+        url("../img/index-can-mobile@2x.png"),
+        url("../img/index-background-mobile@2x.jpg"),
+        linear-gradient(to top, $white 38%, #64a83b 38%);
+      background-size: 280px, 320px;
+      background-repeat: no-repeat, no-repeat, repeat;
+      background-position: 50% 168px, 50% 0, 50% 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      align-items: flex-start;
+      min-height: 870px;
+      padding-left: 117px;
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      background-size: 709px;
+      background-position: 49% 244px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-can-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 573px;
+      transform: translate(0, -128px);
+      z-index: 0;
+      padding-top: 113px;
+      padding-left: 0;
+      background: url("../img/index-can-desktop@1x.png") 63% 72% no-repeat, url("../img/index-background-desktop@1x.jpg") 99.9% 0 no-repeat;
+    }
+  }
+}
+
+.banner__title {
+  font-family: $oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $black;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-top: 43px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-left: 110px;
+  }
+
+  &--index {
+    line-height: 36px;
+    color: $white;
+    text-align: center;
+    padding-top: 29px;
+    padding-bottom: 25px;
+    padding-left: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      color: $black;
+      text-align: left;
+      width: 415px;
+      padding-top: 43px;
+      padding-bottom: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 109px;
+      padding-left: 190px;
+      padding-bottom: 41px;
+    }
+  }
+}
+
+.banner__promo {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+  }
+}
+
+.banner__btn {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  width: 87.5vw;
+  margin-top: auto;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  background-color: $green;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 272px;
+    left: 119px;
+    width: 245px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 456px;
+    left: 190px;
+  }
+}
