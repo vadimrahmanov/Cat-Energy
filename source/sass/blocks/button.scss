@@ -1,0 +1,41 @@
+.button {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-transform: uppercase;
+  width: 87.5vw;
+  background-color: $green;
+  border: none;
+
+  &--order {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -5px;
+
+    @media (min-width: $tablet-width) {
+      width: 32.43vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 169px;
+    }
+  }
+
+  &--show-more {
+    color: $greyish;
+    background-color: $grey;
+    padding-top: 11px;
+    padding-bottom: 9px;
+
+    @media (min-width: $tablet-width) {
+      width: 32.43vw;
+      padding-bottom: 8px;
+      margin-top: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 169px;
+    }
+  }
+}
