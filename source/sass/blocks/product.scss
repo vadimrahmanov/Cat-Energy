@@ -1,0 +1,128 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 142px;
+    background-color: $grey;
+    position: relative;
+  }
+}
+
+.product__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+  display: block;
+  width: 75px;
+  margin: 0;
+  padding-top: 11px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: center;
+    width: 130px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-left: 0;
+  }
+}
+
+.product__image-link {
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: -46px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    &--big {
+      top: -82px;
+    }
+  }
+}
+
+.product__image {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+
+    &--small {
+      height: 172px;
+    }
+
+    &--big {
+      height: 208px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+
+    &--small {
+      height: 174px;
+    }
+  }
+}
+
+.product__description {
+  width: 50vw;
+  padding-left: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 32.6vw;
+    border-collapse: collapse;
+    margin-bottom: 39px;
+
+    tr {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 175px;
+  }
+}
+
+.product__description-title,
+.product__description-content {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $greyish;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+  }
+}
+
+.product__description-title {
+  @media (min-width: $desktop-width) {
+    padding-left: 3px;
+  }
+}
+
+.product__description-content {
+  text-align: right;
+  padding-right: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 2px;
+  }
+}
