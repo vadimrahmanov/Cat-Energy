@@ -1,0 +1,87 @@
+.additional-item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
+}
+
+.additional-item__title {
+  font-family: $oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $black-two;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 9px;
+  padding-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 130px;
+    padding-top: 0;
+    padding-bottom: 25px;
+    margin-right: auto;
+    padding-left: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.additional-item__table {
+  width: 100%;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    padding-right: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    width: 326px;
+    padding-right: 3.7%;
+    padding-top: 6px;
+  }
+}
+
+.additional-item__description,
+.additional-item__price {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 14px;
+  color: $greyish;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.additional-item__description {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.additional-item__price {
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    width: 45px;
+  }
+}
