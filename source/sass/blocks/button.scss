@@ -11,7 +11,6 @@
   &--order {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: -5px;
 
     @media (min-width: $tablet-width) {
       width: 32.43vw;
@@ -19,6 +18,20 @@
 
     @media (min-width: $desktop-width) {
       width: 169px;
+    }
+  }
+
+  &--additional-order {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      width: 82.43vw;
+      padding-bottom: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 243px;
     }
   }
 
