@@ -46,14 +46,10 @@
   justify-content: center;
   align-items: center;
   min-height: 65px;
-  border-bottom: 1px solid $border-gray;
+  border-top: 1px solid $border-gray;
 
   &:first-child {
     border-top: 1px solid $border-gray;
-  }
-
-  &:last-child {
-    border-bottom: none;
   }
 
   @media (min-width: $tablet-width) {
