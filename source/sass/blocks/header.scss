@@ -2,10 +2,12 @@
   position: relative;
   min-width: $mobile-width;
   max-width: 1440px;
+  border-bottom: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    border-bottom: none;
   }
 }
 

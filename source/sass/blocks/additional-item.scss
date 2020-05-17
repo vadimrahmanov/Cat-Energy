@@ -29,11 +29,12 @@
     padding-top: 0;
     padding-bottom: 25px;
     margin-right: auto;
-    padding-left: 1px;
+    padding-left: 38px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+    padding-left: 1px;
   }
 }
 

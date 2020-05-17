@@ -35,6 +35,14 @@
 .catalog__list-item {
   border-bottom: 1px solid $border-gray;
 
+  &:first-child {
+    border-top: 1px solid $border-gray;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 42.19vw;
     padding-bottom: 140px;
