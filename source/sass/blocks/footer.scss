@@ -1,0 +1,172 @@
+.footer {
+  max-width: 1440px;
+  padding-bottom: 31px;
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+    padding-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-top: 0;
+  }
+}
+
+.footer__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-left: 31px;
+    padding-right: 30px;
+    padding-top: 54px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 53px;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  padding-top: 28px;
+  padding-left: 6%;
+  padding-bottom: 26px;
+  background-color: $white;
+
+  &--grey {
+    background-color: $grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-left: 71px;
+    padding-right: 72px;
+    padding-bottom: 57px;
+    justify-content: space-between;
+
+    &--grey {
+      padding-top: 65px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    box-sizing: border-box;
+    width: 570px;
+    padding-top: 65px;
+    padding-left: 76px;
+    padding-right: 84px;
+    padding-bottom: 57px;
+
+    &--grey {
+      background-color: $white;
+    }
+  }
+}
+
+.footer__invite {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  margin: 0;
+  width: 43%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
+    width: 154px;
+  }
+}
+
+.footer__address {
+  font-family: $arial;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $greyish;
+  width: 45%;
+  padding-left: 4%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    width: 160px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.footer__address-city {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-top: 19px;
+  }
+}
+
+.footer__map {
+  width: 100%;
+  height: 362px;
+  border: 0;
+  background: url("../img/map-pin.png") no-repeat 131px 140px, url("../img/bg-map-mobile@1x.png") no-repeat 0 -38px;
+  background-size: 59px, 320px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/map-pin.png") no-repeat 131px 140px, url("../img/bg-map-mobile@2x.png") no-repeat 0 -38px;
+    background-size: 59px, 320px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 396px;
+    background: url("../img/map-pin.png") no-repeat 323px 146px, url("../img/bg-map-tablet@1x.png") no-repeat 0 -4px;
+    background-size: 122px, 767px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/map-pin.png") no-repeat 323px 146px, url("../img/bg-map-tablet@2x.png") no-repeat 0 -4px;
+      background-size: 122px, 767px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+    background: url("../img/map-pin.png") no-repeat 999px 151px, url("../img/bg-map-desktop@1x.png") no-repeat 0 0;
+    background-size: 122px, 1440px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/map-pin.png") no-repeat 999px 151px, url("../img/bg-map-desktop@2x.png") no-repeat 0 0;
+      background-size: 122px, 1440px;
+    }
+  }
+}
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
