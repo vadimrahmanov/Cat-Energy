@@ -343,12 +343,11 @@
     }
 
     &:focus {
-      border: 2px solid $greyish;
-      outline: none;
+      outline: 2px solid $greyish;
     }
 
     &:invalid {
-      border: 2px solid #ff8282;
+      outline: 2px solid #ff8282;
     }
 
     @media (min-width: $tablet-width) {
@@ -526,8 +525,7 @@
   padding-top: 12px;
 
   &:focus {
-    border: 2px solid $greyish;
-    outline: none;
+    outline: 2px solid $greyish;
   }
 
   @media (min-width: $tablet-width) {
