@@ -269,5 +269,20 @@
   @media (min-width: $desktop-width) {
     padding-left: 9.2%;
     padding-top: 8px;
+
+    &:hover {
+      &::after {
+        width: 32px;
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+      }
+    }
+
+    &:active {
+      color: rgba(17, 17, 17, 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 }

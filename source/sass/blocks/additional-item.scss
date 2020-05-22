@@ -7,6 +7,7 @@
 
   @media (min-width: $desktop-width) {
     align-items: center;
+    justify-content: flex-start;
   }
 }
 
@@ -83,6 +84,6 @@
   text-align: right;
 
   @media (min-width: $tablet-width) {
-    width: 45px;
+    width: 50px;
   }
 }
