@@ -1,5 +1,4 @@
 .footer {
-  max-width: 1440px;
   padding-bottom: 31px;
   background-color: $grey;
 
@@ -24,9 +23,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    box-sizing: border-box;
+    max-width: $desktop-width;
+    margin: 0 auto;
     padding-top: 53px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -56,7 +58,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 40px;
     box-sizing: border-box;
     width: 570px;
     padding-top: 65px;

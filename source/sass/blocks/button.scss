@@ -42,7 +42,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 243px;
+      width: 245px;
       cursor: pointer;
 
       &:hover {
@@ -99,6 +99,7 @@
 
     @media (min-width: $desktop-width) {
       width: 568px;
+      margin-left: 40px;
 
       &:hover {
         background-color: $green-hover;

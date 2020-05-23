@@ -1,11 +1,12 @@
-.catalog {
-  max-width: 1440px;
+.catalog__wrapper {
+  max-width: $desktop-width;
 
   @media (min-width: $tablet-width) {
     margin-top: 165px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
     margin-top: 22px;
     margin-bottom: 8px;
   }
@@ -27,8 +28,8 @@
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

@@ -1,13 +1,17 @@
-.header {
+.header__wrapper {
   position: relative;
   min-width: $mobile-width;
-  max-width: 1440px;
+  max-width: $desktop-width;
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
   }
 }
 
@@ -30,7 +34,7 @@
     width: 203px;
     height: 60px;
     padding-top: 53px;
-    padding-left: 109px;
+    margin-left: 4%;
 
     &:hover {
       opacity: 0.8;

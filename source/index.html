@@ -10,78 +10,96 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo">
-        <picture>
-          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип &laquo;Кота Энерджи&raquo;">
-        </picture>
-      </a>
-      <button class="header__toggle header__toggle--hidden">
-        <span class="visually-hidden">Открыть/Закрыть меню</span>
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--current main-nav__list-item--current-index">
-            <a class="main-nav__link main-nav__link--index">Главная</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__link main-nav__link--index" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__link main-nav__link--index" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип &laquo;Кота Энерджи&raquo;">
+          </picture>
+        </a>
+        <button class="header__toggle header__toggle--hidden">
+          <span class="visually-hidden">Открыть/Закрыть меню</span>
+        </button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item main-nav__list-item--current main-nav__list-item--current-index">
+              <a class="main-nav__link main-nav__link--index">Главная</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link main-nav__link--index" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link main-nav__link--index" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <div class="banner banner--index">
-        <h1 class="banner__title banner__title--index">Функциональное питание для котов</h1>
-        <p class="banner__promo">Занялся собой? Займись котом!</p>
-        <a class="banner__btn" href="form.html">Подобрать программу</a>
-      </div>
-      <section class="features">
-        <div class="features__container">
-          <h2 class="features__title features__title--loss-weight">Похудение</h2>
-          <p class="features__description features__description--loss-weight">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="features__link features__link--slim" href="">Каталог Slim</a>
+      <section class="banner banner--index">
+        <div class="banner__wrapper">
+          <h2 class="banner__title">Функциональное питание для котов</h2>
+          <p class="banner__promo">Занялся собой? Займись котом!</p>
+          <div class="banner__image-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+              <img class="banner__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Питание для котов «Кэт энерджи»">
+            </picture>
+          </div>
+          <a class="banner__btn" href="form.html">Подобрать программу</a>
         </div>
-        <div class="features__container">
-          <h2 class="features__title features__title--mass-gain">Набор массы</h2>
-          <p class="features__description features__description--mass-gain">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="features__link features__link--pro" href="">Каталог Pro</a>
+      </section>
+      <section class="features">
+        <div class="features__wrapper">
+          <div class="features__container">
+            <h2 class="features__title features__title--loss-weight">Похудение</h2>
+            <p class="features__description features__description--loss-weight">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="features__link features__link--slim" href="">Каталог Slim</a>
+          </div>
+          <div class="features__container">
+            <h2 class="features__title features__title--mass-gain">Набор массы</h2>
+            <p class="features__description features__description--mass-gain">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="features__link features__link--pro" href="">Каталог Pro</a>
+          </div>
         </div>
       </section>
       <section class="how-it-works">
-        <h2 class="how-it-works__title">Как это работает</h2>
-        <ul class="how-it-works__list">
-          <li class="how-it-works__list-item how-it-works__list-item--leaf">
-            <p class="how-it-works__description">Функциональное питание содержит только полезные питательные вещества.</p>
-            <span class="how-it-works__number">1</span>
-          </li>
-          <li class="how-it-works__list-item how-it-works__list-item--powder">
-            <p class="how-it-works__description how-it-works__description--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-            <span class="how-it-works__number how-it-works__number--two">2</span>
-          </li>
-          <li class="how-it-works__list-item how-it-works__list-item--meal">
-            <p class="how-it-works__description how-it-works__description--meal">Замените один-два приема обычной еды на наше функциональное питание.</p>
-            <span class="how-it-works__number how-it-works__number--three">3</span>
-          </li>
-          <li class="how-it-works__list-item how-it-works__list-item--clocks">
-            <p class="how-it-works__description how-it-works__description--clocks">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
-            <span class="how-it-works__number how-it-works__number--four">4</span>
-          </li>
-        </ul>
+        <div class="how-it-works__wrapper">
+          <h2 class="how-it-works__title">Как это работает</h2>
+          <ul class="how-it-works__list">
+            <li class="how-it-works__list-item how-it-works__list-item--leaf">
+              <p class="how-it-works__description">Функциональное питание содержит только полезные питательные вещества.</p>
+              <span class="how-it-works__number">1</span>
+            </li>
+            <li class="how-it-works__list-item how-it-works__list-item--powder">
+              <p class="how-it-works__description how-it-works__description--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+              <span class="how-it-works__number how-it-works__number--two">2</span>
+            </li>
+            <li class="how-it-works__list-item how-it-works__list-item--meal">
+              <p class="how-it-works__description how-it-works__description--meal">Замените один-два приема обычной еды на наше функциональное питание.</p>
+              <span class="how-it-works__number how-it-works__number--three">3</span>
+            </li>
+            <li class="how-it-works__list-item how-it-works__list-item--clocks">
+              <p class="how-it-works__description how-it-works__description--clocks">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
+              <span class="how-it-works__number how-it-works__number--four">4</span>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="real-example">
-        <h2 class="real-example__title">Живой пример</h2>
         <div class="real-example__wrapper">
+          <h2 class="real-example__title">Живой пример</h2>
           <p class="real-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="real-example__results">
             <p class="real-example__kilo">5 кг</p>
             <p class="real-example__days-spent">60 дней</p>
             <p class="real-example__food-cost">
-          Затраты на питание:
+            Затраты на питание:
             <span class="real-example__price">15 000 руб.</span>
             </p>
           </div>
