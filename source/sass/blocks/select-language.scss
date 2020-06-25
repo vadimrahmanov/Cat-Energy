@@ -1,0 +1,13 @@
+.select-language {
+  font-family: $oswald;
+  font-size: 25px;
+  width: 112px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}

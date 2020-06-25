@@ -115,6 +115,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px/2 - 80px;
     margin-top: 64px;
+    z-index: 1;
   }
 
   &--catalog,
